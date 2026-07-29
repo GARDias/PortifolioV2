@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gabriel Dias — Design e desenvolvimento</title>
+  <meta name="description" content="Portfólio de Gabriel Dias, designer e desenvolvedor de 28 anos. Projetos de produto digital do rascunho ao código, com foco em interfaces simples e legíveis." />
+  <link rel="canonical" href="https://gabrieldias.dev/" />
+  <meta name="author" content="Gabriel Dias" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gabriel Dias — Design e desenvolvimento" />
+  <meta property="og:description" content="Portfólio de Gabriel Dias, designer e desenvolvedor de 28 anos. Projetos de produto digital do rascunho ao código, com foco em interfaces simples e legíveis." />
+  <meta property="og:url" content="https://gabrieldias.dev/" />
+  <meta property="og:site_name" content="Gabriel Dias" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://gabrieldias.dev/og-image.jpg" />
+  <meta property="og:image:alt" content="Gabriel Dias — Design e desenvolvimento" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gabriel Dias — Design e desenvolvimento" />
+  <meta name="twitter:description" content="Portfólio de Gabriel Dias, designer e desenvolvedor de 28 anos. Projetos de produto digital do rascunho ao código." />
+  <meta name="twitter:image" content="https://gabrieldias.dev/og-image.jpg" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gabriel Dias",
+    "jobTitle": "Designer e desenvolvedor",
+    "url": "https://gabrieldias.dev",
+    "email": "mailto:gabrielapdias0@gmail.com",
+    "description": "Designer e desenvolvedor de 28 anos, atua entre design de produto e front-end, projetando e construindo interfaces digitais do rascunho ao código.",
+    "knowsAbout": ["Design de produto", "UX/UI", "Front-end", "HTML", "CSS"],
+    "sameAs": [
+      "https://www.linkedin.com/in/[seu-usuario-linkedin]"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Projetos (ItemList de CreativeWork) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "[Nome do projeto]",
+          "description": "Descrição curta do projeto: o problema, a solução e o papel de Gabriel nele.",
+          "url": "https://gabrieldias.dev/projetos/nome-do-projeto",
+          "creator": { "@type": "Person", "name": "Gabriel Dias" },
+          "keywords": "Design, Front-end"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "[Nome do projeto]",
+          "description": "Descrição curta do projeto: o problema, a solução e o papel de Gabriel nele.",
+          "url": "https://gabrieldias.dev/projetos/nome-do-projeto-2",
+          "creator": { "@type": "Person", "name": "Gabriel Dias" },
+          "keywords": "Produto, UX"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "[Nome do projeto]",
+          "description": "Descrição curta do projeto: o problema, a solução e o papel de Gabriel nele.",
+          "url": "https://gabrieldias.dev/projetos/nome-do-projeto-3",
+          "creator": { "@type": "Person", "name": "Gabriel Dias" },
+          "keywords": "Design, Estratégia"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="topnav">
+    <div class="topnav__inner">
+      <a class="topnav__brand" href="/">Gabriel Dias</a>
+      <nav aria-label="Navegação principal">
+        <ul class="topnav__links">
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#como-penso">Como penso</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow hero__eyebrow">Design &amp; desenvolvimento</p>
+        <h1 id="hero-title" class="hero__title">Gabriel Dias faz interfaces que funcionam de verdade.</h1>
+        <p class="lead">
+          28 anos, projetando e construindo produtos digitais do rascunho ao código.
+          Menos ruído visual, mais decisão clara — para pessoas e para quem lê o site depois.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn--outline" href="#contato">Falar comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projects" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="projects-title">Projetos</h2>
+          <p class="lead">Uma seleção de trabalhos recentes. Os itens abaixo são exemplos — substitua pelos seus projetos reais.</p>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="project-card__thumb" aria-hidden="true">
+              <span class="project-card__thumb-label">Projeto 01</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/projetos/nome-do-projeto" itemprop="url">
+                  <span itemprop="name">[Nome do projeto]</span>
+                </a>
+              </h3>
+              <p class="project-card__desc" itemprop="description">
+                Descrição curta do projeto: o problema, a solução e o papel de Gabriel nele.
+              </p>
+              <div class="project-card__meta">
+                <ul class="tag-list">
+                  <li><span class="tag tag--accent" itemprop="keywords">Design</span></li>
+                  <li><span class="tag" itemprop="keywords">Front-end</span></li>
+                </ul>
+              </div>
+              <meta itemprop="creator" content="Gabriel Dias" />
+            </div>
+          </article>
+
+          <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="project-card__thumb" aria-hidden="true">
+              <span class="project-card__thumb-label">Projeto 02</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/projetos/nome-do-projeto-2" itemprop="url">
+                  <span itemprop="name">[Nome do projeto]</span>
+                </a>
+              </h3>
+              <p class="project-card__desc" itemprop="description">
+                Descrição curta do projeto: o problema, a solução e o papel de Gabriel nele.
+              </p>
+              <div class="project-card__meta">
+                <ul class="tag-list">
+                  <li><span class="tag tag--ocre" itemprop="keywords">Produto</span></li>
+                  <li><span class="tag" itemprop="keywords">UX</span></li>
+                </ul>
+              </div>
+              <meta itemprop="creator" content="Gabriel Dias" />
+            </div>
+          </article>
+
+          <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="project-card__thumb" aria-hidden="true">
+              <span class="project-card__thumb-label">Projeto 03</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/projetos/nome-do-projeto-3" itemprop="url">
+                  <span itemprop="name">[Nome do projeto]</span>
+                </a>
+              </h3>
+              <p class="project-card__desc" itemprop="description">
+                Descrição curta do projeto: o problema, a solução e o papel de Gabriel nele.
+              </p>
+              <div class="project-card__meta">
+                <ul class="tag-list">
+                  <li><span class="tag tag--accent" itemprop="keywords">Design</span></li>
+                  <li><span class="tag tag--ocre" itemprop="keywords">Estratégia</span></li>
+                </ul>
+              </div>
+              <meta itemprop="creator" content="Gabriel Dias" />
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section class="about" id="sobre" aria-labelledby="about-title" itemscope itemtype="https://schema.org/Person">
+      <div class="container about__grid">
+        <div>
+          <h2 id="about-title">Sobre mim</h2>
+          <p>
+            <span itemprop="name">Gabriel Dias</span> — tenho 28 anos e trabalho na fronteira entre
+            design e desenvolvimento. Não escolhi um lado porque o problema raramente cabe em um
+            só: às vezes a solução é uma decisão visual, às vezes é uma linha de código, na
+            maioria das vezes é as duas coisas ao mesmo tempo.
+          </p>
+          <p itemprop="description">
+            Gosto de interfaces discretas, que não competem com o conteúdo. Prefiro resolver certo
+            a resolver rápido, mas sei quando isso não é opção. Fora do trabalho, estudo
+            tipografia, arquitetura da informação e por que a maioria dos sites é mais difícil de
+            usar do que precisava ser.
+          </p>
+          <meta itemprop="jobTitle" content="Designer e desenvolvedor" />
+          <meta itemprop="url" content="https://gabrieldias.dev" />
+        </div>
+
+        <dl class="about__facts">
+          <dt>Foco</dt>
+          <dd itemprop="knowsAbout">Design de produto &amp; front-end</dd>
+
+          <dt>Baseado em</dt>
+          <dd itemprop="homeLocation">Brasil</dd>
+
+          <dt>Disponibilidade</dt>
+          <dd>Projetos freelance e colaborações</dd>
+
+          <dt>Contato</dt>
+          <dd><a itemprop="email" href="mailto:gabrielapdias0@gmail.com">gabrielapdias0@gmail.com</a></dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Como eu penso -->
+    <section class="thinking" id="como-penso" aria-labelledby="thinking-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="thinking-title">Como eu penso</h2>
+          <p class="lead">Alguns princípios que guiam como decido e trabalho.</p>
+        </div>
+
+        <div class="thinking__grid">
+          <div class="thinking-card thinking-card--do">
+            <h3>Faço</h3>
+            <ul>
+              <li>Pergunto o problema real antes de propor a solução.</li>
+              <li>Prefiro menos telas e menos cliques a mais funcionalidades.</li>
+              <li>Escrevo o código pensando em quem vai ler depois — inclusive eu.</li>
+            </ul>
+          </div>
+
+          <div class="thinking-card thinking-card--dont">
+            <h3>Evito</h3>
+            <ul>
+              <li>Adicionar recurso porque "pode ser útil um dia".</li>
+              <li>Decisão visual sem motivo — cor e forma servem ao conteúdo.</li>
+              <li>Prometer prazo que eu sei que não vou cumprir.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="contact-title">Contato</h2>
+          <p class="lead">Projeto novo, dúvida ou só bater um papo sobre design — me chama.</p>
+        </div>
+
+        <div class="contact__grid">
+          <form class="contact-form" action="" method="post">
+            <div class="form-field form-field--required">
+              <label for="contact-name">Nome</label>
+              <input type="text" id="contact-name" name="name" autocomplete="name" required />
+            </div>
+
+            <div class="form-field form-field--required">
+              <label for="contact-email">E-mail</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" required aria-describedby="contact-email-hint" />
+              <p class="form-hint" id="contact-email-hint">Uso só para responder você, nada de spam.</p>
+            </div>
+
+            <div class="form-field form-field--required">
+              <label for="contact-message">Mensagem</label>
+              <textarea id="contact-message" name="message" required></textarea>
+            </div>
+
+            <button class="btn btn--accent" type="submit">Enviar mensagem</button>
+          </form>
+
+          <div class="contact-direct">
+            <div class="contact-direct__item">
+              <span class="contact-direct__label">E-mail direto</span>
+              <a class="contact-direct__value" href="mailto:gabrielapdias0@gmail.com">gabrielapdias0@gmail.com</a>
+            </div>
+            <div class="contact-direct__item">
+              <span class="contact-direct__label">LinkedIn</span>
+              <a class="contact-direct__value" href="https://www.linkedin.com/in/[seu-usuario-linkedin]" rel="me noopener noreferrer" target="_blank">
+                linkedin.com/in/[seu-usuario-linkedin] <span class="sr-only">(abre em nova aba)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__signature">Gabriel Dias</p>
+      <ul class="site-footer__links">
+        <li><a href="mailto:gabrielapdias0@gmail.com">E-mail</a></li>
+        <li><a href="https://www.linkedin.com/in/[seu-usuario-linkedin]" rel="me noopener noreferrer" target="_blank">LinkedIn <span class="sr-only">(abre em nova aba)</span></a></li>
+        <li><a href="#main">Voltar ao topo</a></li>
+      </ul>
+      <p class="site-footer__meta">© 2026 Gabriel Dias. Feito à mão, sem framework.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

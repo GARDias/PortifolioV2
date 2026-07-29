@@ -1,0 +1,45 @@
+# Gabriel Dias — Portfólio
+
+> Gabriel Dias, 28 anos, design e desenvolvimento. Projeta e constrói produtos
+> digitais do rascunho ao código, com foco em interfaces simples, legíveis e
+> sem ruído visual.
+
+## Quem é
+
+Gabriel Dias trabalha na fronteira entre design e front-end: pesquisa,
+decisões visuais e implementação em código, muitas vezes no mesmo projeto.
+Prioriza clareza de conteúdo sobre decoração, e escreve/constrói pensando
+tanto em quem usa a interface quanto em quem lê ou processa o código depois
+(incluindo crawlers e assistentes de IA).
+
+## O que faz
+
+- Design de produto (UX/UI) para web.
+- Desenvolvimento front-end em HTML, CSS e JavaScript puro ou com frameworks.
+- Projetos que exigem as duas coisas ao mesmo tempo: da ideia à interface funcionando.
+
+## Páginas e seções
+
+- / — Página inicial: hero de apresentação, grade de projetos, seção "Sobre
+  mim" com dados estruturados (schema.org/Person), seção "Como eu penso"
+  com princípios de trabalho, formulário de contato e rodapé com links.
+- /#projetos — Grade de cases/projetos, cada um marcado como
+  schema.org/CreativeWork, com título, descrição curta e tecnologias usadas.
+- /#sobre — Bio curta, área de atuação e forma de contato direto.
+- /#como-penso — O que Gabriel faz e evita ao tomar decisões de projeto.
+- /#contato — Formulário de contato e e-mail direto.
+
+## Contato
+
+- E-mail: gabrielapdias0@gmail.com
+- LinkedIn: https://www.linkedin.com/in/[seu-usuario-linkedin]
+
+## Notas para agentes e crawlers
+
+- Todo o conteúdo textual deste site existe em HTML estático — nenhum texto
+  depende de JavaScript para ser renderizado.
+- Cada página inclui JSON-LD (schema.org) no <head> com dados estruturados
+  correspondentes ao conteúdo visível.
+- Nomes de projetos e tecnologias nos cards são exemplos/placeholders até
+  serem substituídos pelo conteúdo real — consulte o HTML da página para a
+  versão mais atual.

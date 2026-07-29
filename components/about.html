@@ -1,0 +1,43 @@
+<!--
+  Componente: Sobre mim
+  Contém microdados schema.org/Person (redundantes ao JSON-LD Person no
+  <head> da página, para reforçar leitura por crawlers/leitores de tela).
+  Requer: styles.css (.about, .about__grid, .about__facts)
+
+  CONTEÚDO PLACEHOLDER (rascunho) — revise o texto da bio antes de publicar.
+-->
+<section class="about" id="sobre" aria-labelledby="about-title" itemscope itemtype="https://schema.org/Person">
+  <div class="container about__grid">
+    <div>
+      <h2 id="about-title">Sobre mim</h2>
+      <p>
+        <span itemprop="name">Gabriel Dias</span> — tenho 28 anos e
+        trabalho na fronteira entre design e desenvolvimento. Não escolhi um lado porque o
+        problema raramente cabe em um só: às vezes a solução é uma decisão visual, às vezes é
+        uma linha de código, na maioria das vezes é as duas coisas ao mesmo tempo.
+      </p>
+      <p itemprop="description">
+        Gosto de interfaces discretas, que não competem com o conteúdo. Prefiro resolver certo
+        a resolver rápido, mas sei quando isso não é opção. Fora do trabalho, estudo tipografia,
+        arquitetura da informação e por que a maioria dos sites é mais difícil de usar do que
+        precisava ser.
+      </p>
+      <meta itemprop="jobTitle" content="Designer e desenvolvedor" />
+      <meta itemprop="url" content="https://gabrieldias.dev" />
+    </div>
+
+    <dl class="about__facts">
+      <dt>Foco</dt>
+      <dd itemprop="knowsAbout">Design de produto &amp; front-end</dd>
+
+      <dt>Baseado em</dt>
+      <dd itemprop="homeLocation">Brasil</dd>
+
+      <dt>Disponibilidade</dt>
+      <dd>Projetos freelance e colaborações</dd>
+
+      <dt>Contato</dt>
+      <dd><a itemprop="email" href="mailto:gabrielapdias0@gmail.com">gabrielapdias0@gmail.com</a></dd>
+    </dl>
+  </div>
+</section>

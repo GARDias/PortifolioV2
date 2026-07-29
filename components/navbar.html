@@ -1,0 +1,28 @@
+<!--
+  Componente: Navbar (topnav fixa)
+  Uso: colar logo após <body>, antes do <main>.
+  Requer: styles.css (.topnav, .topnav__inner, .topnav__brand, .topnav__links)
+  Acessibilidade: <nav> com aria-label próprio; aria-current="page" marca o link ativo.
+-->
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="topnav">
+  <div class="topnav__inner">
+    <a class="topnav__brand" href="/">Gabriel Dias</a>
+    <nav aria-label="Navegação principal">
+      <ul class="topnav__links">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#como-penso">Como penso</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!--
+  Em um site com múltiplas páginas (não apenas âncoras), marque a página
+  atual com aria-current="page" no <a> correspondente, ex.:
+  <a href="/sobre" aria-current="page">Sobre</a>
+-->
+

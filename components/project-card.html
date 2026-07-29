@@ -1,0 +1,92 @@
+<!--
+  Componente: Card de projeto
+  Uso: um <article> por projeto, dentro de um grid ".project-grid".
+  Contém microdados schema.org/CreativeWork (redundantes ao JSON-LD da página,
+  para reforçar a leitura por crawlers que não processam JSON-LD).
+  Requer: styles.css (.project-grid, .project-card e filhos)
+
+  CONTEÚDO PLACEHOLDER — substitua título, descrição, tecnologias e link
+  pelos dados reais do projeto antes de publicar.
+-->
+<div class="project-grid">
+
+  <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="project-card__thumb" aria-hidden="true">
+      <span class="project-card__thumb-label">Projeto 01</span>
+    </div>
+    <div class="project-card__body">
+      <h3 class="project-card__title">
+        <a href="/projetos/nome-do-projeto" itemprop="url">
+          <span itemprop="name">[Nome do projeto]</span>
+        </a>
+      </h3>
+      <p class="project-card__desc" itemprop="description">
+        [Descrição curta do projeto: o problema, a solução e seu papel nele.
+        Uma ou duas frases, sem jargão.]
+      </p>
+      <div class="project-card__meta">
+        <ul class="tag-list">
+          <li><span class="tag tag--accent" itemprop="keywords">Design</span></li>
+          <li><span class="tag" itemprop="keywords">Front-end</span></li>
+        </ul>
+      </div>
+      <meta itemprop="creator" content="Gabriel Dias" />
+    </div>
+  </article>
+
+  <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="project-card__thumb" aria-hidden="true">
+      <span class="project-card__thumb-label">Projeto 02</span>
+    </div>
+    <div class="project-card__body">
+      <h3 class="project-card__title">
+        <a href="/projetos/nome-do-projeto-2" itemprop="url">
+          <span itemprop="name">[Nome do projeto]</span>
+        </a>
+      </h3>
+      <p class="project-card__desc" itemprop="description">
+        [Descrição curta do projeto: o problema, a solução e seu papel nele.
+        Uma ou duas frases, sem jargão.]
+      </p>
+      <div class="project-card__meta">
+        <ul class="tag-list">
+          <li><span class="tag tag--ocre" itemprop="keywords">Produto</span></li>
+          <li><span class="tag" itemprop="keywords">UX</span></li>
+        </ul>
+      </div>
+      <meta itemprop="creator" content="Gabriel Dias" />
+    </div>
+  </article>
+
+  <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="project-card__thumb" aria-hidden="true">
+      <span class="project-card__thumb-label">Projeto 03</span>
+    </div>
+    <div class="project-card__body">
+      <h3 class="project-card__title">
+        <a href="/projetos/nome-do-projeto-3" itemprop="url">
+          <span itemprop="name">[Nome do projeto]</span>
+        </a>
+      </h3>
+      <p class="project-card__desc" itemprop="description">
+        [Descrição curta do projeto: o problema, a solução e seu papel nele.
+        Uma ou duas frases, sem jargão.]
+      </p>
+      <div class="project-card__meta">
+        <ul class="tag-list">
+          <li><span class="tag tag--accent" itemprop="keywords">Design</span></li>
+          <li><span class="tag tag--ocre" itemprop="keywords">Estratégia</span></li>
+        </ul>
+      </div>
+      <meta itemprop="creator" content="Gabriel Dias" />
+    </div>
+  </article>
+
+</div>
+
+<!--
+  Observação de acessibilidade: o link do card cobre o card inteiro via
+  .project-card__title a::after (position:absolute; inset:0) — apenas o
+  título é focável por teclado, evitando links duplicados/redundantes na
+  ordem de tabulação.
+-->
