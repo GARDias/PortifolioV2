@@ -1,7 +1,7 @@
 <!--
   Componente: Navbar (topnav fixa)
   Uso: colar logo após <body>, antes do <main>.
-  Requer: styles.css (.topnav, .topnav__inner, .topnav__brand, .topnav__links)
+  Requer: styles.css (.topnav, .topnav__inner, .topnav__brand, .topnav__links, .topnav__cta)
   Acessibilidade: <nav> com aria-label próprio; aria-current="page" marca o link ativo.
 
   Caminhos: usamos links RELATIVOS (sem "/" no início) para funcionar tanto
@@ -19,10 +19,15 @@
       <ul class="topnav__links">
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#como-penso">Como penso</a></li>
-        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
+    <a
+      class="topnav__cta"
+      href="https://www.linkedin.com/in/gdias0/"
+      rel="me noopener noreferrer"
+      target="_blank"
+      >Entre em contato<span class="sr-only"> (abre em nova aba)</span></a
+    >
   </div>
 </header>
 
