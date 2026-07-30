@@ -34,6 +34,10 @@
   --accent: var(--terracotta);
   --accent-deep: var(--clay-deep);
 
+  /* Estado (uso pontual em fluxogramas/diagramas: caminhos "sim"/"não") */
+  --state-yes: #6f8f5b;
+  --state-no: var(--clay-deep);
+
   /* Tipografia */
   --font-display: "Noto Serif", serif;
   --font-body: "Inter", sans-serif;
@@ -901,6 +905,62 @@ section {
   color: rgba(28, 23, 20, 0.55);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.case-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--sp-5);
+  margin-top: var(--sp-6);
+}
+
+.case-image-grid .case-image {
+  margin-top: 0;
+}
+
+.case-diagram {
+  margin: var(--sp-6) 0 0 0;
+  padding: var(--sp-6);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+}
+
+.case-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 480px;
+}
+
+.case-screenshots {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+  margin-top: var(--sp-6);
+}
+
+.case-screenshot {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.case-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-screenshot__caption {
+  padding: var(--sp-4) var(--sp-5);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
 }
 
 .scenario-grid {
