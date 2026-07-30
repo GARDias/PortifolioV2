@@ -51,7 +51,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600&display=swap"
       rel="stylesheet"
     />
 
@@ -175,8 +175,6 @@
         </div>
       </section>
 
-     
-
       <!-- Objetivos -->
       <section class="case-section" aria-labelledby="objetivos-title">
         <div class="container">
@@ -233,9 +231,10 @@
 
           <h3>Acessibilidade como fundação</h3>
           <p>
-            A conformidade WCAG AA foi injetada no DNA dos Basic Components. Contrastes, estados de foco e áreas de clique foram resolvidos
-            no nível do componente pai, blindando a engenharia de cometer erros
-            na montagem das telas.
+            A conformidade WCAG AA foi injetada no DNA dos Basic Components.
+            Contrastes, estados de foco e áreas de clique foram resolvidos no
+            nível do componente pai, blindando a engenharia de cometer erros na
+            montagem das telas.
           </p>
 
           <h3>Negociação de viabilidade</h3>
@@ -323,6 +322,9 @@
           </p>
         </div>
       </section>
+
+      <!-- Anatomia & Contraste -->
+
       <section class="case-section" aria-labelledby="demo-title">
         <div class="container">
           <h2 id="demo-title">Demonstração do sistema</h2>
@@ -333,221 +335,863 @@
             <!-- Seção 1: marcas -->
             <div class="ds-section">
               <h3>Logos</h3>
-          <div class="ds-logo-demo">
-            <div class="ds-logo-group">
-              <h4>Conexa</h4>
-              <div class="ds-logo-grid">
-                <figure class="ds-logo-card">
-                  <img
-                    src="../../images/logo-conexa-color.png"
-                    alt="Logo da Conexa sobre fundo colorido da marca"
-                  />
-                  <figcaption>Fundo branco, texto colorido</figcaption>
-                </figure>
-                <figure class="ds-logo-card">
-                  <img
-                    src="../../images/logo-conexa-neutral-black.png"
-                    alt="Logo da Conexa sobre fundo neutro preto"
-                  />
-                  <figcaption>Fundo neutro, texto preto</figcaption>
-                </figure>
-                <figure class="ds-logo-card ds-logo-card--dark">
-                  <img
-                    src="../../images/logo-conexa-neutral-white.png"
-                    alt="Logo da Conexa (versão branca) sobre fundo preto"
-                  />
-                  <figcaption>Fundo neutro, texto branco</figcaption>
-                </figure>
-                <figure class="ds-logo-card ds-logo-card--brand-conexa">
-                  <img
-                    src="../../images/logo-conexa-color-white.png"
-                    alt="Logo da Conexa com texto branco sobre fundo na cor primária da marca"
-                  />
-                  <figcaption>Fundo colorido, texto branco</figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="ds-logo-group">
-              <h4>Psicologia Viva</h4>
-              <div class="ds-logo-grid">
-                <figure class="ds-logo-card">
-                  <img
-                    src="../../images/logo-psicologiaviva-color.png"
-                    alt="Logo da Psicologia Viva sobre fundo colorido da marca"
-                  />
-                  <figcaption>Fundo branco, texto colorido</figcaption>
-                </figure>
-                <figure class="ds-logo-card">
-                  <img
-                    src="../../images/logo-psicologiaviva-neutral-black.png"
-                    alt="Logo da Psicologia Viva sobre fundo neutro preto"
-                  />
-                  <figcaption>Fundo neutro, texto preto</figcaption>
-                </figure>
-                <figure class="ds-logo-card ds-logo-card--dark">
-                  <img
-                    src="../../images/logo-psicologiaviva-neutral-white.png"
-                    alt="Logo da Psicologia Viva (versão branca) sobre fundo preto"
-                  />
-                  <figcaption>Fundo neutro, texto branco</figcaption>
-                </figure>
-                <figure class="ds-logo-card ds-logo-card--brand-viva">
-                  <img
-                    src="../../images/logo-psicologiaviva-color-white.png"
-                    alt="Logo da Psicologia Viva com texto branco sobre fundo na cor primária da marca"
-                  />
-                  <figcaption>Fundo colorido, texto branco</figcaption>
-                </figure>
-              </div>
-            </div>
-
-
-            <!-- Seção 2: tokens de cor -->
-            <div class="ds-section border-top-none">
-              <h3>Tokens de cor</h3>
-              <div class="ds-brands">
-                <div class="ds-brand">
+              <div class="ds-logo-demo">
+                <div class="ds-logo-group">
                   <h4>Conexa</h4>
-                  <div class="ds-swatches">
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color"
-                        style="background-color: #0a0a32"
-                      ></span>
-                      <span class="ds-swatch__hex">500 · #0A0A32</span>
-                    </div>
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color"
-                        style="background-color: #13007d"
-                      ></span>
-                      <span class="ds-swatch__hex">400 · #13007D</span>
-                    </div>
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color ds-swatch__color--main"
-                        style="background-color: #1900af"
-                      ></span>
-                      <span class="ds-swatch__hex"
-                        >300 · #1900AF<br />principal</span
-                      >
-                    </div>
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color"
-                        style="background-color: #cdc5ff"
-                      ></span>
-                      <span class="ds-swatch__hex">200 · #CDC5FF</span>
-                    </div>
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color"
-                        style="background-color: #eeebff"
-                      ></span>
-                      <span class="ds-swatch__hex">100 · #EEEBFF</span>
-                    </div>
+                  <div class="ds-logo-grid">
+                    <figure class="ds-logo-card">
+                      <img
+                        src="../../images/logo-conexa-color.png"
+                        alt="Logo da Conexa sobre fundo colorido da marca"
+                      />
+                      <figcaption>Fundo branco, texto colorido</figcaption>
+                    </figure>
+                    <figure class="ds-logo-card">
+                      <img
+                        src="../../images/logo-conexa-neutral-black.png"
+                        alt="Logo da Conexa sobre fundo neutro preto"
+                      />
+                      <figcaption>Fundo neutro, texto preto</figcaption>
+                    </figure>
+                    <figure class="ds-logo-card ds-logo-card--dark">
+                      <img
+                        src="../../images/logo-conexa-neutral-white.png"
+                        alt="Logo da Conexa (versão branca) sobre fundo preto"
+                      />
+                      <figcaption>Fundo neutro, texto branco</figcaption>
+                    </figure>
+                    <figure class="ds-logo-card ds-logo-card--brand-conexa">
+                      <img
+                        src="../../images/logo-conexa-color-white.png"
+                        alt="Logo da Conexa com texto branco sobre fundo na cor primária da marca"
+                      />
+                      <figcaption>Fundo colorido, texto branco</figcaption>
+                    </figure>
                   </div>
                 </div>
 
-                <div class="ds-brand">
+                <div class="ds-logo-group">
                   <h4>Psicologia Viva</h4>
-                  <div class="ds-swatches">
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color"
-                        style="background-color: #4a245c"
-                      ></span>
-                      <span class="ds-swatch__hex">500 · #4A245C</span>
+                  <div class="ds-logo-grid">
+                    <figure class="ds-logo-card">
+                      <img
+                        src="../../images/logo-psicologiaviva-color.png"
+                        alt="Logo da Psicologia Viva sobre fundo colorido da marca"
+                      />
+                      <figcaption>Fundo branco, texto colorido</figcaption>
+                    </figure>
+                    <figure class="ds-logo-card">
+                      <img
+                        src="../../images/logo-psicologiaviva-neutral-black.png"
+                        alt="Logo da Psicologia Viva sobre fundo neutro preto"
+                      />
+                      <figcaption>Fundo neutro, texto preto</figcaption>
+                    </figure>
+                    <figure class="ds-logo-card ds-logo-card--dark">
+                      <img
+                        src="../../images/logo-psicologiaviva-neutral-white.png"
+                        alt="Logo da Psicologia Viva (versão branca) sobre fundo preto"
+                      />
+                      <figcaption>Fundo neutro, texto branco</figcaption>
+                    </figure>
+                    <figure class="ds-logo-card ds-logo-card--brand-viva">
+                      <img
+                        src="../../images/logo-psicologiaviva-color-white.png"
+                        alt="Logo da Psicologia Viva com texto branco sobre fundo na cor primária da marca"
+                      />
+                      <figcaption>Fundo colorido, texto branco</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <!-- Seção 2: tokens de cor -->
+                <div class="ds-section border-top-none">
+                  <h3>Tokens de cor</h3>
+                  <div class="ds-brands">
+                    <div class="ds-brand">
+                      <h4>Conexa</h4>
+                      <div class="ds-swatches">
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #0a0a32"
+                          ></span>
+                          <span class="ds-swatch__hex">500 · #0A0A32</span>
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #13007d"
+                          ></span>
+                          <span class="ds-swatch__hex">400 · #13007D</span>
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color ds-swatch__color--main"
+                            style="background-color: #1900af"
+                          ></span>
+                          <span class="ds-swatch__hex"
+                            >300 · #1900AF<br />principal</span
+                          >
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #cdc5ff"
+                          ></span>
+                          <span class="ds-swatch__hex">200 · #CDC5FF</span>
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #eeebff"
+                          ></span>
+                          <span class="ds-swatch__hex">100 · #EEEBFF</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ds-swatch">
-                      <span
-                        class="ds-swatch__color"
-                        style="background-color: #7c23a8"
-                      ></span>
-                      <span class="ds-swatch__hex">400 · #7C23A8</span>
+
+                    <div class="ds-brand">
+                      <h4>Psicologia Viva</h4>
+                      <div class="ds-swatches">
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #4a245c"
+                          ></span>
+                          <span class="ds-swatch__hex">500 · #4A245C</span>
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #7c23a8"
+                          ></span>
+                          <span class="ds-swatch__hex">400 · #7C23A8</span>
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color ds-swatch__color--main"
+                            style="background-color: #a04fc9"
+                          ></span>
+                          <span class="ds-swatch__hex"
+                            >300 · #A04FC9<br />principal</span
+                          >
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #d596ff"
+                          ></span>
+                          <span class="ds-swatch__hex">200 · #D596FF</span>
+                        </div>
+                        <div class="ds-swatch">
+                          <span
+                            class="ds-swatch__color"
+                            style="background-color: #ddd7ee"
+                          ></span>
+                          <span class="ds-swatch__hex">100 · #DDD7EE</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ds-swatch">
+                  </div>
+
+                  <p class="eyebrow ds-status-eyebrow">Cores complementares</p>
+                  <div class="ds-status-row">
+                    <div class="ds-status">
                       <span
-                        class="ds-swatch__color ds-swatch__color--main"
-                        style="background-color: #a04fc9"
+                        class="ds-status__color"
+                        style="background-color: #098500"
                       ></span>
-                      <span class="ds-swatch__hex"
-                        >300 · #A04FC9<br />principal</span
-                      >
+                      <span class="ds-status__label">Sucesso</span>
                     </div>
-                    <div class="ds-swatch">
+                    <div class="ds-status">
                       <span
-                        class="ds-swatch__color"
-                        style="background-color: #d596ff"
+                        class="ds-status__color"
+                        style="background-color: #bd0700"
                       ></span>
-                      <span class="ds-swatch__hex">200 · #D596FF</span>
+                      <span class="ds-status__label">Erro</span>
                     </div>
-                    <div class="ds-swatch">
+                    <div class="ds-status">
                       <span
-                        class="ds-swatch__color"
-                        style="background-color: #ddd7ee"
+                        class="ds-status__color"
+                        style="background-color: #bd9c00"
                       ></span>
-                      <span class="ds-swatch__hex">100 · #DDD7EE</span>
+                      <span class="ds-status__label">Aviso</span>
+                    </div>
+                    <div class="ds-status">
+                      <span
+                        class="ds-status__color"
+                        style="background-color: #00cde6"
+                      ></span>
+                      <span class="ds-status__label">Informação</span>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <p class="eyebrow ds-status-eyebrow">Cores complementares</p>
-              <div class="ds-status-row">
-                <div class="ds-status">
-                  <span
-                    class="ds-status__color"
-                    style="background-color: #098500"
-                  ></span>
-                  <span class="ds-status__label">Sucesso</span>
-                </div>
-                <div class="ds-status">
-                  <span
-                    class="ds-status__color"
-                    style="background-color: #bd0700"
-                  ></span>
-                  <span class="ds-status__label">Erro</span>
-                </div>
-                <div class="ds-status">
-                  <span
-                    class="ds-status__color"
-                    style="background-color: #bd9c00"
-                  ></span>
-                  <span class="ds-status__label">Aviso</span>
-                </div>
-                <div class="ds-status">
-                  <span
-                    class="ds-status__color"
-                    style="background-color: #00cde6"
-                  ></span>
-                  <span class="ds-status__label">Informação</span>
+                <!-- Seção 3: tipografia -->
+                <div class="ds-section">
+                  <h3>Tipografia</h3>
+                  <div class="ds-type-scale">
+                    <div class="ds-type-row">
+                      <p class="ds-type-sample ds-type-sample--display">
+                        Hero DS
+                      </p>
+                      <span class="ds-type-meta">Heading Display · 48px</span>
+                    </div>
+                    <div class="ds-type-row">
+                      <p class="ds-type-sample ds-type-sample--large">
+                        Hero DS
+                      </p>
+                      <span class="ds-type-meta">Heading Large · 24px</span>
+                    </div>
+                    <div class="ds-type-row">
+                      <p class="ds-type-sample ds-type-sample--paragraph">
+                        Hero DS
+                      </p>
+                      <span class="ds-type-meta">Paragraph Large · 16px</span>
+                    </div>
+                    <div class="ds-type-row">
+                      <p class="ds-type-sample ds-type-sample--label">
+                        Hero DS
+                      </p>
+                      <span class="ds-type-meta">Label · 14px</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="case-section" aria-labelledby="anatomia-title">
+        <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+          <symbol id="hero-icon-check" viewBox="0 0 16 16">
+            <path
+              d="M13.5 4.5 6.5 11.5 2.5 7.5"
+              stroke="currentColor"
+              stroke-width="1.6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </symbol>
+        </svg>
 
-            <!-- Seção 3: tipografia -->
-            <div class="ds-section">
-              <h3>Tipografia</h3>
-              <div class="ds-type-scale">
-                <div class="ds-type-row">
-                  <p class="ds-type-sample ds-type-sample--display">Hero DS</p>
-                  <span class="ds-type-meta">Heading Display · 48px</span>
+        <div class="container">
+          <h2 id="anatomia-title">Anatomia &amp; Contraste</h2>
+          <p>
+            Componentes reais renderizados em código — não capturas de tela —
+            usando a mesma base de botão do Hero DS, testada em anatomia,
+            estados e contraste de acessibilidade entre as duas marcas.
+          </p>
+        </div>
+
+        <div class="container">
+          <!-- Seção 1: Anatomia -->
+          <div class="anatomy-block">
+            <h3>Anatomia</h3>
+            <div class="anatomy-row">
+              <div class="anatomy-figure">
+                <svg
+                  class="anatomy-connectors"
+                  viewBox="0 0 380 190"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <marker
+                      id="anatomy-arrow"
+                      viewBox="0 0 10 10"
+                      refX="9"
+                      refY="5"
+                      markerWidth="6"
+                      markerHeight="6"
+                      orient="auto-start-reverse"
+                    >
+                      <path
+                        d="M0,0 L10,5 L0,10 z"
+                        style="fill: var(--text-muted)"
+                      />
+                    </marker>
+                  </defs>
+                  <path
+                    class="anatomy-connector"
+                    marker-end="url(#anatomy-arrow)"
+                    d="M48,115 L105,115"
+                  />
+                  <path
+                    class="anatomy-connector"
+                    marker-end="url(#anatomy-arrow)"
+                    d="M190,38 L190,95"
+                  />
+                  <path
+                    class="anatomy-connector"
+                    marker-end="url(#anatomy-arrow)"
+                    d="M332,115 L275,115"
+                  />
+                </svg>
+
+                <span class="anatomy-pin anatomy-pin--1" aria-hidden="true"
+                  >1</span
+                >
+                <span class="anatomy-pin anatomy-pin--2" aria-hidden="true"
+                  >2</span
+                >
+                <span class="anatomy-pin anatomy-pin--3" aria-hidden="true"
+                  >3</span
+                >
+
+                <button class="hero-btn hero-btn--conexa" type="button">
+                  <svg
+                    class="hero-btn__icon"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <use href="#hero-icon-check"></use>
+                  </svg>
+                  Confirmar
+                </button>
+              </div>
+              <ol class="anatomy-list">
+                <li>
+                  <span class="anatomy-list__num" aria-hidden="true">1</span
+                  ><span>Slot: ícone à esquerda</span>
+                </li>
+                <li>
+                  <span class="anatomy-list__num" aria-hidden="true">2</span
+                  ><span>Fundo: <code>$brand-color-Primary-300</code></span>
+                </li>
+                <li>
+                  <span class="anatomy-list__num" aria-hidden="true">3</span
+                  ><span
+                    >Descrição/Título: <code>$text-button-default</code></span
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Seção 2: Estados -->
+          <div class="anatomy-block">
+            <h3>Estados</h3>
+            <div class="states-grid">
+              <div class="states-col">
+                <h4>Web</h4>
+
+                <div class="state-block">
+                  <p class="state-block__label">Default</p>
+                  <div class="state-block__buttons">
+                    <button class="hero-btn hero-btn--conexa" type="button">
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button class="hero-btn hero-btn--conexa" type="button">
+                      Continuar
+                    </button>
+                  </div>
                 </div>
-                <div class="ds-type-row">
-                  <p class="ds-type-sample ds-type-sample--large">Hero DS</p>
-                  <span class="ds-type-meta">Heading Large · 24px</span>
+
+                <div class="state-block">
+                  <p class="state-block__label">Hover</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--hover"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--hover"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
                 </div>
-                <div class="ds-type-row">
-                  <p class="ds-type-sample ds-type-sample--paragraph">
-                    Hero DS
-                  </p>
-                  <span class="ds-type-meta">Paragraph Large · 16px</span>
+
+                <div class="state-block">
+                  <p class="state-block__label">Focus</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--focus"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--focus"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
                 </div>
-                <div class="ds-type-row">
-                  <p class="ds-type-sample ds-type-sample--label">Hero DS</p>
-                  <span class="ds-type-meta">Label · 14px</span>
+
+                <div class="state-block">
+                  <p class="state-block__label">Loading</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Disabled</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa"
+                      type="button"
+                      disabled
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa"
+                      type="button"
+                      disabled
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="states-col">
+                <h4>Mobile</h4>
+
+                <div class="state-block">
+                  <p class="state-block__label">Default</p>
+                  <div class="state-block__buttons">
+                    <button class="hero-btn hero-btn--conexa" type="button">
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button class="hero-btn hero-btn--conexa" type="button">
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Hover</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--hover"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--hover"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Focus</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--focus"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--focus"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Loading</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Disabled</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa"
+                      type="button"
+                      disabled
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa"
+                      type="button"
+                      disabled
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seção 3: Contraste -->
+          <div class="anatomy-block">
+            <h3>Contraste</h3>
+            <div class="states-grid">
+              <div class="states-col">
+                <h4>Conexa</h4>
+
+                <div class="state-block">
+                  <p class="state-block__label">Default</p>
+                  <div class="state-block__buttons">
+                    <button class="hero-btn hero-btn--conexa" type="button">
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button class="hero-btn hero-btn--conexa" type="button">
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AAA</strong> 12.64</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Hover</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--hover"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--hover"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AAA</strong> 15.86</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Focus</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--focus"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--focus"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AAA</strong> 12.64</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Loading</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AAA</strong> 12.64</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Disabled</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--conexa"
+                      type="button"
+                      disabled
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--conexa"
+                      type="button"
+                      disabled
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AA</strong> 5.87</span>
+                </div>
+              </div>
+
+              <div class="states-col">
+                <h4>Psicologia Viva</h4>
+
+                <div class="state-block">
+                  <p class="state-block__label">Default</p>
+                  <div class="state-block__buttons">
+                    <button class="hero-btn hero-btn--viva" type="button">
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button class="hero-btn hero-btn--viva" type="button">
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AA</strong> 4.71</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Hover</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--viva hero-btn--hover"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--viva hero-btn--hover"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AA</strong> 7.88</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Focus</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--viva hero-btn--focus"
+                      type="button"
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--viva hero-btn--focus"
+                      type="button"
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AA</strong> 4.71</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Loading</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--viva hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--viva hero-btn--loading"
+                      type="button"
+                      aria-busy="true"
+                    >
+                      <span class="hero-btn__spinner" aria-hidden="true"></span>
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AA</strong> 4.71</span>
+                </div>
+
+                <div class="state-block">
+                  <p class="state-block__label">Disabled</p>
+                  <div class="state-block__buttons">
+                    <button
+                      class="hero-btn hero-btn--viva"
+                      type="button"
+                      disabled
+                    >
+                      <svg
+                        class="hero-btn__icon"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <use href="#hero-icon-check"></use>
+                      </svg>
+                      Continuar
+                    </button>
+                    <button
+                      class="hero-btn hero-btn--viva"
+                      type="button"
+                      disabled
+                    >
+                      Continuar
+                    </button>
+                  </div>
+                  <span class="contrast-badge"><strong>AA</strong> 5.87</span>
                 </div>
               </div>
             </div>
