@@ -1056,3 +1056,262 @@ section {
   max-width: 32ch;
   margin: 0 auto var(--sp-6) auto;
 }
+
+/* --------------------------------------------------------------------------
+   15. Demonstração de Design System (case Hero DS)
+   -------------------------------------------------------------------------- */
+.ds-demo {
+  margin-top: var(--sp-6);
+}
+
+.ds-section {
+  padding: var(--sp-6) 0;
+  border-top: 1px solid var(--border);
+}
+
+.ds-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.ds-section h3 {
+  margin-bottom: var(--sp-5);
+}
+
+.ds-section h4 {
+  font-size: 15px;
+  margin-bottom: var(--sp-3);
+}
+
+/* Seção 1 — marcas */
+.ds-logos-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-7);
+  padding: var(--sp-6);
+  background: var(--cream-2);
+  border-radius: var(--radius-md);
+}
+
+.ds-logo-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.ds-logo-slot__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 64px;
+  background: var(--surface);
+  border: 1px dashed var(--brown-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0 var(--sp-3);
+}
+
+.ds-logo-slot__caption {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Seção 2 — tokens de cor */
+.ds-brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--sp-6);
+}
+
+.ds-swatches {
+  display: flex;
+  gap: var(--sp-3);
+}
+
+.ds-swatch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.ds-swatch__color {
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.ds-swatch__color--main {
+  border: 2px solid var(--ink);
+}
+
+.ds-swatch__hex {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--text-muted);
+  text-align: center;
+  word-break: break-word;
+}
+
+.ds-status-eyebrow {
+  margin: var(--sp-7) 0 var(--sp-4) 0;
+}
+
+.ds-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-6);
+}
+
+.ds-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.ds-status__color {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.ds-status__label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Seção 3 — tipografia */
+.ds-type-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  padding: var(--sp-4) 0;
+  border-top: 1px solid var(--border);
+}
+
+.ds-type-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.ds-type-sample {
+  margin: 0;
+  color: var(--text);
+}
+
+.ds-type-sample--display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.ds-type-sample--large {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.ds-type-sample--paragraph {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.ds-type-sample--label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ds-type-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Demonstração de logo (case Hero DS) */
+.ds-logo-demo {
+  margin-top: var(--sp-6);
+}
+
+.ds-logo-group + .ds-logo-group {
+  margin-top: var(--sp-7);
+}
+
+.ds-logo-group h3 {
+  margin-bottom: var(--sp-4);
+}
+
+.ds-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-5);
+}
+
+@media (max-width: 640px) {
+  .ds-logo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ds-logo-card {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.ds-logo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: var(--sp-6);
+  background: var(--surface);
+}
+
+.ds-logo-card figcaption {
+  padding: var(--sp-3) var(--sp-4);
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Variações de fundo para pré-visualizar logos claros/com texto branco */
+.ds-logo-card--dark img {
+  background: var(--ink);
+}
+
+.ds-logo-card--brand-viva img {
+  background: #a04fc9; /* Psicologia Viva — cor primária (300) */
+}
+
+.ds-logo-card--brand-conexa img {
+  background: #1900af; /* Conexa — cor primária (300) */
+}
+
+.border-top-none {
+  border-top: none;
+}
