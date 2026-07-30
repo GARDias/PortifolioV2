@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rich Notifications — Conexa Saúde | Gabriel Dias</title>
+    <meta
+      name="description"
+      content="Como conduzi um benchmarking e prototipação de notificações ricas para reduzir a ansiedade da espera em consultas de telemedicina — do Live Activities do iOS às sobreposições do Android."
+    />
+    <link
+      rel="canonical"
+      href="https://www.gardias.com.br/projetos/rich-notifications/"
+    />
+    <meta name="author" content="Gabriel Dias" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Rich Notifications — Conexa Saúde" />
+    <meta
+      property="og:description"
+      content="Como conduzi um benchmarking e prototipação de notificações ricas para reduzir a ansiedade da espera em consultas de telemedicina — do Live Activities do iOS às sobreposições do Android."
+    />
+    <meta
+      property="og:url"
+      content="https://www.gardias.com.br/projetos/rich-notifications/"
+    />
+    <meta property="og:site_name" content="Gabriel Dias" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:image"
+      content="https://www.gardias.com.br/og-image.jpg"
+    />
+    <meta property="og:image:alt" content="Rich Notifications — Conexa Saúde" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rich Notifications — Conexa Saúde" />
+    <meta
+      name="twitter:description"
+      content="Benchmarking e prototipação de notificações ricas para reduzir a ansiedade da espera em consultas de telemedicina."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.gardias.com.br/og-image.jpg"
+    />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <!-- JSON-LD: Breadcrumb -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://www.gardias.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projetos",
+            "item": "https://www.gardias.com.br/#projetos"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Rich Notifications",
+            "item": "https://www.gardias.com.br/projetos/rich-notifications/"
+          }
+        ]
+      }
+    </script>
+
+    <!-- JSON-LD: CreativeWork (case) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Rich Notifications — Conexa Saúde",
+        "description": "Como conduzi um benchmarking e prototipação de notificações ricas para reduzir a ansiedade da espera em consultas de telemedicina — do Live Activities do iOS às sobreposições do Android.",
+        "url": "https://www.gardias.com.br/projetos/rich-notifications/",
+        "creator": {
+          "@type": "Person",
+          "name": "Gabriel Dias",
+          "url": "https://www.gardias.com.br"
+        },
+        "about": ["Product Design", "Benchmarking", "Prototipação"],
+        "keywords": "Product Design, Benchmarking"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="topnav">
+      <div class="topnav__inner">
+        <a class="topnav__brand" href="../../index.html">Gabriel Dias</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          hidden
+        >
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menu de navegação</span>
+        </button>
+
+        <div class="nav-panel" id="primary-nav">
+          <nav aria-label="Navegação principal">
+            <ul class="topnav__links">
+              <li><a href="../../index.html#projetos">Projetos</a></li>
+              <li><a href="../../index.html#sobre">Sobre</a></li>
+            </ul>
+          </nav>
+          <a
+            class="topnav__cta"
+            href="https://www.linkedin.com/in/gdias0/"
+            rel="me noopener noreferrer"
+            target="_blank"
+            >Entre em contato<span class="sr-only"> (abre em nova aba)</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Cabeçalho do case -->
+      <section class="case-header">
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <a class="case-back" href="../../index.html#projetos"
+              >&larr; Voltar para todos os projetos</a
+            >
+          </nav>
+
+          <p class="eyebrow">Estudo exploratório</p>
+          <h1>
+            Rich Notifications: mantendo pacientes informados além do app.
+          </h1>
+          <p class="lead">
+            Como conduzi um benchmarking e prototipação de notificações ricas
+            para reduzir a ansiedade da espera em consultas de telemedicina — do
+            Live Activities do iOS às sobreposições do Android.
+          </p>
+
+          <dl class="case-meta">
+            <div class="case-meta__item">
+              <dt>Empresa</dt>
+              <dd>Conexa Saúde</dd>
+            </div>
+            <div class="case-meta__item">
+              <dt>Função</dt>
+              <dd>Product Designer Pleno</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Contexto -->
+      <section class="case-section" aria-labelledby="contexto-title">
+        <div class="container case-prose">
+          <h2 id="contexto-title">Contexto — o que é isso</h2>
+          <p>
+            O recurso de Rich Notifications é fundamental para manter os
+            usuários constantemente informados sobre suas atividades correntes —
+            como a espera por uma entrega em domicílio, a chegada de um
+            motorista de aplicativo ou, no contexto da Conexa, o momento de ser
+            atendido por um profissional de saúde.
+          </p>
+          <p>
+            Ao integrar Rich Notifications, o objetivo era proporcionar uma
+            comunicação mais efetiva e um acompanhamento mais preciso de
+            consultas e sessões, melhorando a gestão de tempo e a satisfação do
+            usuário — mesmo quando ele não está com o app aberto.
+          </p>
+        </div>
+      </section>
+
+      <!-- Objetivos -->
+      <section class="case-section" aria-labelledby="objetivos-title">
+        <div class="container case-prose">
+          <h2 id="objetivos-title">Objetivos</h2>
+          <ul>
+            <li>
+              Manter o usuário continuamente informado sobre sua consulta, mesmo
+              quando não está ativo no aplicativo.
+            </li>
+            <li>
+              Informar o usuário sobre o momento exato em que o profissional de
+              saúde está pronto para atendê-lo.
+            </li>
+            <li>
+              Melhorar a experiência do usuário por meio de um mecanismo de
+              comunicação eficaz.
+            </li>
+            <li>
+              Garantir uma gestão mais eficiente do tempo de espera dos
+              profissionais de saúde e dos pacientes.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Benchmarking -->
+      <section class="case-section" aria-labelledby="benchmarking-title">
+        <div class="container case-prose">
+          <h2 id="benchmarking-title">Benchmarking</h2>
+          <p>
+            Conduzi um benchmarking aprofundado, começando pela implementação do
+            Live Activities da Apple, adaptando essa solução para iPhones e
+            iPads. Para o Android, explorei a técnica de sobreposição de tela em
+            celulares e tablets.
+          </p>
+          <p>
+            Analisei aplicativos como 99, Uber e iFood, além de apps de
+            acompanhamento de voos e eventos esportivos, examinando como cada um
+            apresenta informações dinâmicas: o posicionamento na interface, o
+            uso de animações para indicar progresso, e os métodos para sinalizar
+            conclusão de uma ação.
+          </p>
+
+          <figure class="case-image case-image--plain">
+            <img
+              class="case-image__photo"
+              src="../../images/benchRich.png"
+              alt="Prints de referência de apps como Uber, iFood e acompanhamento de voos, usados no benchmarking de notificações em tempo real"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Insights -->
+      <section class="case-section" aria-labelledby="insights-title">
+        <div class="container case-prose">
+          <h2 id="insights-title">Insights</h2>
+          <ul>
+            <li>
+              <strong>Aprimoramento da experiência do usuário:</strong>
+              notificações devem ser personalizadas com informações relevantes e
+              ações diretas; elementos visuais dinâmicos ajudam a capturar
+              atenção.
+            </li>
+            <li>
+              <strong>Interatividade e acessibilidade:</strong> no Android, o
+              texto precisa deixar claro que tocar na sobreposição redireciona
+              de volta à sala de espera — acessibilidade como prioridade em toda
+              a interação.
+            </li>
+            <li>
+              <strong>Atualizações em tempo real:</strong> sincronização com os
+              servidores do app é crucial para dados sempre atualizados.
+            </li>
+            <li>
+              <strong>Teste e iteração constantes:</strong> testes A/B para
+              entender o que aumenta engajamento, com coleta de feedback direto
+              dos usuários.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Ideação -->
+      <section class="case-section" aria-labelledby="ideacao-title">
+        <div class="container case-prose">
+          <h2 id="ideacao-title">Ideação</h2>
+          <p>
+            Desenhei o Rich Notification como complemento à sala de espera, para
+            dois cenários:
+          </p>
+
+          <h3>Consultas agendadas</h3>
+          <p>
+            Mensagens de status da consulta, um timer de 10 minutos iniciado
+            automaticamente antes do horário, e nome e foto do profissional que
+            vai atender — criando um ambiente mais pessoal e acolhedor.
+          </p>
+        </div>
+        <div class="container">
+          <div class="case-image-grid">
+            <figure class="ds-logo-card">
+              <img
+                src="../../images/RichAgendadoIOS.png"
+                alt="Tela de Rich Notification para consulta agendada no iOS"
+              />
+              <figcaption>Consulta agendada · iOS</figcaption>
+            </figure>
+            <figure class="ds-logo-card">
+              <img
+                src="../../images/RichAgendadoAndroid.png"
+                alt="Tela de sobreposição para consulta agendada no Android"
+              />
+              <figcaption>Consulta agendada · Android</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="container case-prose">
+          <h3>Consultas imediatas</h3>
+          <p>
+            Posição do usuário na fila de atendimento, mensagens de status, e
+            horário estimado de chamada.
+          </p>
+        </div>
+        <div class="container">
+          <div class="case-image-grid">
+            <figure class="ds-logo-card">
+              <img
+                src="../../images/RichImediatoIOS.png"
+                alt="Tela de Rich Notification para consulta imediata no iOS"
+              />
+              <figcaption>Consulta imediata · iOS</figcaption>
+            </figure>
+            <figure class="ds-logo-card">
+              <img
+                src="../../images/RichImediatoAndroid.png"
+                alt="Tela de sobreposição para consulta imediata no Android"
+              />
+              <figcaption>Consulta imediata · Android</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Próximos passos -->
+      <section class="case-section" aria-labelledby="proximos-passos-title">
+        <div class="container case-prose">
+          <h2 id="proximos-passos-title">Próximos passos</h2>
+          <p>
+            Este estudo não chegou a ser implementado em produção. Os próximos
+            passos definidos foram a condução de testes A/B, em parceria com a
+            Zenklub, para validar as variações antes de um eventual lançamento.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="case-image-grid">
+            <figure class="ds-logo-card">
+              <img
+                src="../../images/RichAgendadoZen.png"
+                alt="Variação de teste A/B com a Zenklub para consulta agendada no iOS"
+              />
+              <figcaption>Variante Zenklub · Consulta agendada</figcaption>
+            </figure>
+            <figure class="ds-logo-card">
+              <img
+                src="../../images/RichImadiatoZen.png"
+                alt="Variação de teste A/B com a Zenklub para consulta imediata no iOS"
+              />
+              <figcaption>Variante Zenklub · Consulta imediata</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Além das notificações -->
+      <section class="case-section" aria-labelledby="alem-title">
+        <div class="container case-prose">
+          <h2 id="alem-title">Além das notificações</h2>
+          <p>
+            Como extensão da mesma necessidade — manter o usuário sempre
+            atualizado — mapeei a ideia de um widget para notificações,
+            confirmações e lembretes de consultas, buscando inspiração em
+            widgets de e-mail, calendário, previsão do tempo e no Duolingo.
+          </p>
+
+          <figure class="case-image">
+            <span class="case-image__label"
+              >Widget de referência — imagem em breve</span
+            >
+            <figcaption class="sr-only">
+              Widget de referência para notificações, confirmações e lembretes
+              de consultas. Placeholder a ser substituído pela imagem real do
+              case.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Aprendizados -->
+      <section class="case-section" aria-labelledby="aprendizados-title">
+        <div class="container case-prose">
+          <h2 id="aprendizados-title">Aprendizados</h2>
+          <ul class="checklist">
+            <li>
+              Benchmarking em categorias adjacentes (delivery, mobilidade,
+              esportes) revela padrões de comunicação em tempo real aplicáveis a
+              saúde.
+            </li>
+            <li>
+              Acessibilidade em notificações exige atenção redobrada em
+              interações que dependem de toque/sobreposição, especialmente no
+              Android.
+            </li>
+            <li>
+              Nem todo estudo precisa chegar à produção para gerar valor — o
+              processo de benchmarking e prototipação já orienta decisões
+              futuras do time.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA final -->
+      <section class="case-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title">
+            Quer explorar novas formas de manter usuários engajados no seu
+            produto?
+          </h2>
+          <a
+            class="btn btn--primary"
+            href="https://www.linkedin.com/in/gdias0/"
+            rel="me noopener noreferrer"
+            target="_blank"
+            >Falar comigo</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__signature">Gabriel Dias</p>
+        <ul class="site-footer__links">
+          <li><a href="mailto:gabrielapdias0@gmail.com">E-mail</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gdias0/"
+              rel="me noopener noreferrer"
+              target="_blank"
+              >LinkedIn <span class="sr-only">(abre em nova aba)</span></a
+            >
+          </li>
+          <li><a href="#main">Voltar ao topo</a></li>
+        </ul>
+        <p class="site-footer__meta">
+          © 2026 Gabriel Dias. Feito à mão, sem framework.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../../nav.js"></script>
+  </body>
+</html>

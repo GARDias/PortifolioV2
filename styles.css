@@ -607,8 +607,20 @@ a:hover {
    -------------------------------------------------------------------------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-6);
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
@@ -1001,10 +1013,6 @@ section {
   border-top: 1px solid var(--border);
 }
 
-.case-prose {
-  max-width: 68ch;
-}
-
 .case-prose h2 {
   margin-top: 0;
 }
@@ -1077,6 +1085,63 @@ section {
   text-transform: uppercase;
 }
 
+/* Variante sem borda/moldura: imagem inteira visível (object-fit:
+   contain), sem recorte e sem o retângulo de card ao redor. */
+.case-image--plain {
+  aspect-ratio: auto;
+  border: none;
+  background: none;
+  display: block;
+}
+
+.case-image--plain .case-image__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mockups da landing page (case Psicologia Viva/CAASC): cada print
+   mantém a proporção original, sem esticar/cortar, dentro de uma
+   caixa com fundo neutro e largura máxima própria por versão. */
+.lp-mockups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--sp-6);
+  margin-top: var(--sp-6);
+}
+
+.lp-mockup {
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+  box-sizing: border-box;
+}
+
+.lp-mockup__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.lp-mockup--desktop {
+  max-width: 640px;
+}
+
+.lp-mockup--mobile {
+  max-width: 280px;
+}
+
 .case-image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1086,6 +1151,21 @@ section {
 
 .case-image-grid .case-image {
   margin-top: 0;
+}
+
+/* Variante empilhada: um card abaixo do outro, em vez de lado a lado. */
+.case-image-grid--stack {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.case-image-grid--stack .ds-logo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: cover;
+  padding: 0;
 }
 
 .case-diagram {
@@ -1133,11 +1213,30 @@ section {
   border-top: 1px solid var(--border);
 }
 
+/* Variante sem borda/moldura ao redor da imagem. */
+.case-screenshot--plain {
+  border: none;
+  background: none;
+}
+
+.case-screenshot--plain .case-screenshot__caption {
+  border-top: none;
+  padding-top: 0;
+}
+
 .scenario-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--sp-5);
   margin-top: var(--sp-6);
+}
+
+/* Vantagens exclusivas (case Psicologia Viva/CAASC): 3 colunas fixas
+   no desktop, ao invés do auto-fit padrão do .scenario-grid. */
+@media (min-width: 641px) {
+  .scenario-grid--3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .scenario-card {
@@ -1153,7 +1252,8 @@ section {
   margin: 0 0 var(--sp-2) 0;
 }
 
-.scenario-card h3 {
+.scenario-card h3,
+.scenario-card h4 {
   margin: 0 0 var(--sp-2) 0;
   font-size: 18px;
 }
