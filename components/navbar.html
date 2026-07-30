@@ -3,12 +3,18 @@
   Uso: colar logo após <body>, antes do <main>.
   Requer: styles.css (.topnav, .topnav__inner, .topnav__brand, .topnav__links)
   Acessibilidade: <nav> com aria-label próprio; aria-current="page" marca o link ativo.
+
+  Caminhos: usamos links RELATIVOS (sem "/" no início) para funcionar tanto
+  em hospedagem numa subpasta (ex.: GitHub Pages de teste) quanto num domínio
+  próprio. Ajuste a profundidade conforme a página: na raiz use "./"; numa
+  página um nível abaixo (ex.: /projetos/algum-case/) use "../"; dois níveis
+  abaixo, "../../", e assim por diante.
 -->
 <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
 <header class="topnav">
   <div class="topnav__inner">
-    <a class="topnav__brand" href="/">Gabriel Dias</a>
+    <a class="topnav__brand" href="./">Gabriel Dias</a>
     <nav aria-label="Navegação principal">
       <ul class="topnav__links">
         <li><a href="#projetos">Projetos</a></li>
@@ -23,6 +29,6 @@
 <!--
   Em um site com múltiplas páginas (não apenas âncoras), marque a página
   atual com aria-current="page" no <a> correspondente, ex.:
-  <a href="/sobre" aria-current="page">Sobre</a>
+  <a href="sobre" aria-current="page">Sobre</a>
 -->
 
